@@ -1,10 +1,13 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import { BrowserRouter } from 'react-router-dom'
+import Home from './components/Home'
 
 function App() {
   return (
-    <div>
-      <Navbar />
+    <div className='flex flex-col'>
+    <BrowserRouter>
+      <Home />
+    </BrowserRouter>
     </div>
   )
 }

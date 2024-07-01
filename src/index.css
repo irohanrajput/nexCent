@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #263238;
+}
+
+button{
+    background-color: #43A046;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: #E8F5E9;
+        color: #43A046;
+        outline: #89939E;
+        border: 1px solid #43A046;
+        
+    }
+    &:focus{
+        outline: #89939E;
+        color: #43A046;
+        border: 1px solid #89939E;
+    }
+
+
+    }
