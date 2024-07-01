@@ -10,11 +10,11 @@ body {
 button{
     background-color: #43A046;
     color: white;
-    padding: 7px 15px;
+    padding: 9px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 400;
     transition: all 0.3s ease;
 

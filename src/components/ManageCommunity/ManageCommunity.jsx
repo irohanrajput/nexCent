@@ -4,8 +4,8 @@ import TilesData from "./assets/TilesData.json";
 
 const ManageCommunity = () => {
   return (
-    <div>
-      <div>
+    <>
+      <div className="p-4">
         <span>
           <h1
             className="text-5xl text-center font-semibold"
@@ -21,11 +21,11 @@ const ManageCommunity = () => {
           </h3>
         </span>
       </div>
-      <div className="flex justify-evenly">
-        {TilesData.map((tile, index) => {
+      <div className="flex mb-9 justify-evenly">
+        {TilesData.map((tile, key) => {
           return (
             <InfoTile
-              key={index}
+              key={key}
               icon={tile.icon}
               title={tile.title}
               description={tile.description}
@@ -33,7 +33,7 @@ const ManageCommunity = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 

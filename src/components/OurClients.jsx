@@ -19,7 +19,6 @@ const OurClients = () => {
           </h3>
         </span>
       </div>
-
       <div className="flex m-4 p-4 justify-around">
         <span>
           <Link to="/clients">
@@ -63,6 +62,8 @@ const OurClients = () => {
           </Link>
         </span>
       </div>
+
+      
     </div>
   );
 };
