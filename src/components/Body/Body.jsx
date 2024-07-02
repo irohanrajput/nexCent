@@ -2,6 +2,8 @@ import React from "react";
 import  {Link}  from "react-router-dom";
 import Achievements from "./Achievements/Achievements";
 import CustomerReview from "./CustomerReviews/CustomerReview";
+import guyswithmobile from "./assets/Guyswithmobile.png"
+import GirlTouchingMobile from "./assets/GirlTouchingMobile.png"
 
 const Body = () => {
   return (
@@ -10,8 +12,8 @@ const Body = () => {
         <div className="col-span-2 flex p-4 m-4 ml-32 justify-center ">
           <img
             className="h-96 w-auto "
-            src="src/components/Body/assets/Guyswithmobile.png"
-            alt="man holding a lapton in front of a screen"
+            src={guyswithmobile}
+            alt="two people looking at screen"
           />
         </div>
         <div className="col-span-3 w-5/6 ">
@@ -49,7 +51,7 @@ const Body = () => {
         <div className="col-span-2 flex p-4 m-4 ml-32 justify-center ">
           <img
             className=" w-auto "
-            src="src/components/Body/assets/GirlTouchingMobile.png"
+            src={GirlTouchingMobile}
             alt="man holding a lapton in front of a screen"
           />
         </div>

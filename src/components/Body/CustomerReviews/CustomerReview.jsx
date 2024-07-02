@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Tesla from "./assets/Tesla.png"
+
 
 const CustomerReview = () => {
   return (
@@ -11,7 +13,7 @@ const CustomerReview = () => {
         <div className="col-span-4 flex justify-end ">
           <img
             className="  p-24 pt-9"
-            src="src/components/Body/CustomerReviews/assets/Tesla.png"
+            src={Tesla}
             alt="man holding a lapton in front of a screen"
           />
         </div>
