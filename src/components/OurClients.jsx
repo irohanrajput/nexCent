@@ -38,7 +38,7 @@ const OurClients = () => {
       >
         {logos.map((logo) => {
           return (
-            <span className=" hover:transition-transform hover:scale-150 hover:animate-bounce" >
+            <span className=" hover:transition-transform hover:scale-150 " >
               <Link to="/clients">
                 <img src={logo} alt="logo" className="h-14 w-14" />
               </Link>
