@@ -2,6 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const OurClients = () => {
+  const logos = [
+    "logoipsum1.svg",
+    "logoipsum2.svg",
+    "logoipsum3.svg",
+    "logoipsum4.svg",
+    "logoipsum5.svg",
+    "logoipsum6.svg",
+    "logoipsum3.svg",
+  ];
   return (
     <div className="flex flex-col my-4 p-4">
       <div>
@@ -14,56 +23,29 @@ const OurClients = () => {
           </h1>
         </span>
         <span>
-          <h3 className="text-center p-4 text-base" style={{ color: "#717171" }}>
+          <h3
+            className="text-center p-4 text-base"
+            style={{ color: "#717171" }}
+          >
             We have been working with some Fortune 500+ clients
           </h3>
         </span>
       </div>
-      <div className="flex m-4 p-4 justify-around">
-        <span>
-          <Link to="/clients">
-            <img src="logoipsum1.svg" alt="logo" className="h-14 w-14" />
-          </Link>
-        </span>
 
-        <span>
-          <Link to="/clients">
-            <img src="logoipsum2.svg" alt="logo" className="h-14 w-14" />
-          </Link>
-        </span>
-
-        <span>
-          <Link to="/clients">
-            <img src="logoipsum3.svg" alt="logo" className="h-14 w-14" />
-          </Link>
-        </span>
-
-        <span>
-          <Link to="/clients">
-            <img src="logoipsum4.svg" alt="logo" className="h-14 w-14" />
-          </Link>
-        </span>
-
-        <span>
-          <Link to="/clients">
-            <img src="logoipsum5.svg" alt="logo" className="h-14 w-14" />
-          </Link>
-        </span>
-
-        <span>
-          <Link to="/clients">
-            <img src="logoipsum6.svg" alt="logo" className="h-14 w-14" />
-          </Link>
-        </span>
-
-        <span>
-          <Link to="/clients">
-            <img src="logoipsum3.svg" alt="logo" className="h-14 w-14" />
-          </Link>
-        </span>
+      <div
+        className="flex m-4 p-4 animate-  justify-around"
+        
+      >
+        {logos.map((logo) => {
+          return (
+            <span className=" hover:transition-transform hover:scale-150 hover:animate-bounce" >
+              <Link to="/clients">
+                <img src={logo} alt="logo" className="h-14 w-14" />
+              </Link>
+            </span>
+          );
+        })}
       </div>
-
-      
     </div>
   );
 };

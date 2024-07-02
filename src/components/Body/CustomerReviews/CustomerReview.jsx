@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Tesla from "./assets/Tesla.png"
-
+import Tesla from "./assets/Tesla.png";
 
 const CustomerReview = () => {
+  const logos = [
+    "logoipsum1.svg",
+    "logoipsum2.svg",
+    "logoipsum3.svg",
+    "logoipsum4.svg",
+    "logoipsum5.svg",
+    "logoipsum6.svg",
+  ];
   return (
     <div className="flex justify-center">
       <div
@@ -46,48 +53,28 @@ const CustomerReview = () => {
             </div>
 
             <div className="flex justify-around items-center p-4 m-4">
-              <span>
-                <Link to="/clients">
-                  <img src="logoipsum1.svg" alt="logo" className="h-14 w-14" />
-                </Link>
-              </span>
+              {logos.map((logo, index) => {
+                return (
+                  <span className="hover:transition-transform hover:scale-150">
+                    <Link to="/clients">
+                      <img src={logo} alt="logo" className="h-14 w-14" />
+                    </Link>
+                  </span>
+                );
+              })}
 
-              <span>
-                <Link to="/clients">
-                  <img src="logoipsum2.svg" alt="logo" className="h-14 w-14" />
-                </Link>
-              </span>
-
-              <span>
-                <Link to="/clients">
-                  <img src="logoipsum3.svg" alt="logo" className="h-14 w-14" />
-                </Link>
-              </span>
-
-              <span>
-                <Link to="/clients">
-                  <img src="logoipsum4.svg" alt="logo" className="h-14 w-14" />
-                </Link>
-              </span>
-
-              <span>
-                <Link to="/clients">
-                  <img src="logoipsum5.svg" alt="logo" className="h-14 w-14" />
-                </Link>
-              </span>
-
-              <span>
-                <Link to="/clients">
-                  <img src="logoipsum6.svg" alt="logo" className="h-14 w-14" />
-                </Link>
-              </span>
-              <p
-                style={{ color: " #43A046" }}
-                className="font-bold text-2xl flex text-center"
-              >
-                Meet all Customers{" "}
+              <Link to="/our-customers">
+                <button
+                  style={{ color: "#43A046" }}
+                  className="bg-transparent flex font-bold rounded-full items-center hover:scale-105  hover:bg-transparent"
+                >
+                  <Link to="/our-customers" className="">
+                    Meet All Customers
+                  </Link>
                 <img src="arrow.svg" className="mx-2" alt="" />
-              </p>
+                </button>
+              </Link>
+
             </div>
           </div>
         </div>

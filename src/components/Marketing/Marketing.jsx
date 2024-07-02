@@ -40,7 +40,7 @@ const Marketing = () => {
             </div>
           </div>
       </div>
-      <div className="flex justify-center m-">
+      <div className="flex justify-center">
         {marketingTilesData.map((tile, key) => {
           return (
             <MarketingTile
