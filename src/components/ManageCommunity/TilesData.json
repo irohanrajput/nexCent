@@ -1,16 +1,16 @@
 [
     {
-     "icon": "ManageCommunity/Membership.svg",
+     "icon": "Membership.svg",
       "title": "Membership Organisations",
       "description": "Our membership management software provides full automation of membership renewals and payments"
     },
     {
-      "icon": "ManageCommunity/NationalAssociates.svg",
+      "icon": "NationalAssociates.svg",
       "title": "National Associations",
       "description": "Our membership management software provides full automation of membership renewals and payments"
     },
     {
-      "icon": "ManageCommunity/ClubsGroups.svg",
+      "icon": "ClubsGroups.svg",
       "title": "Clubs And Groups",
       "description": "Our membership management software provides full automation of membership renewals and payments"
     }
