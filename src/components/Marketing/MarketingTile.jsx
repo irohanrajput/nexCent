@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MarketingTile = ({ image, title, link }) => {
   return (
     <div>
-      <div className="relative flex justify-center m-4 p-4">
+      <div className="relative flex justify-center m-4 mb-24 p-4">
         <img className="h-80" src={image} alt="" />
 
         <div

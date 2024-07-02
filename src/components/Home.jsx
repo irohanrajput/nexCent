@@ -3,6 +3,9 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import ManageCommunity from "./ManageCommunity/ManageCommunity";
 import OurClients from "./OurClients";
+import Body from "./Body/Body";
+import Marketing from "./Marketing/Marketing";
+import EndInfo from "./EndInfo";
 
 function Home() {
   return (
@@ -15,6 +18,9 @@ function Home() {
         <OurClients />
         <ManageCommunity />
       </div>
+      <Body />
+      <Marketing/>
+      <EndInfo/>
     </>
   );
 }

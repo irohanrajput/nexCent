@@ -20,7 +20,7 @@ const Marketing = () => {
     },
   ];
   return (
-    <div >
+    <div className="mb-24 m-8" >
       <div className="flex flex-col max-w-12xl">
           <div>
             <h1
