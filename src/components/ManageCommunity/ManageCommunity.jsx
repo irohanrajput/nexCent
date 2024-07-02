@@ -1,6 +1,6 @@
 import React from "react";
 import InfoTile from "./InfoTile";
-import TilesData from "./assets/TilesData.json";
+import TilesData from "./TilesData.json";
 
 const ManageCommunity = () => {
   return (
