@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const Lessons = () => {
   return (
     <div>
-      <div className="grid grid-cols-7 m-4 p-4 py-28">
+      <div className="grid h-full w-full grid-cols-7 m-4 p-4 py-28">
         <div className="col-span-4">
-          <div className="flex flex-col justify-center  ml-28 p-8 h-full">
+          <div className="flex flex-col justify-center  ml-24 p-8 h-full">
             <div>
               <h1
                 className="text-7xl font-semibold"
@@ -45,7 +45,6 @@ const Lessons = () => {
           />
         </div>
       </div>
-      <div className="text-center">* 0 0</div>
     </div>
   );
 };

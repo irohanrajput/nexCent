@@ -1,23 +1,32 @@
-import React, { useState } from 'react';
+// Carousel.jsx
+import React from 'react';
+import Slider from 'react-slick';
+import Lessons from './CaraouselComponents/Lessons';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Marketing from '../Marketing/Marketing';
 
 const Carousel = () => {
-  const [index, setIndex] = useState(0);
-  const length = 3;
-  const handlePrevious = () => {
-    const newIndex = index - 1;
-   setIndex(newIndex < 0 ? length - 1 : newIndex);
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 1500,
   };
-  
-  const handleNext = () => {
-    const newIndex = index + 1;
-    setIndex(newIndex >= length ? 0 : newIndex);
-  };
-  
+
   return (
-    <div className="carousel">
-      <button onClick={handlePrevious}>Previous</button>
-      <button onClick={handleNext}>Next</button>
-      <p>{index}</p>
+    <div className="py-8">
+      <Slider {...settings}>
+        <div>
+          <Lessons />
+        </div>
+        <div>
+          <Marketing />
+        </div>
+      </Slider>
     </div>
   );
 };
