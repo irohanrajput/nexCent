@@ -15,7 +15,7 @@ const Marketing = () => {
     },
     {
       image: "Marketing/HandsOnMacbook.png",
-      title: "Revamping the Membership Model with Triathlon Australi",
+      title: "Revamping the Membership Model with Triathlon Australia",
       link: "/marketing-tile-3",
     },
   ];

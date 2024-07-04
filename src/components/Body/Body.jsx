@@ -11,7 +11,6 @@ const Body = () => {
       <div className="grid grid-cols-5 my-4 p-4 ">
         <div className="col-span-2 flex p-4 m-4 ml-32 justify-center ">
           <img
-            className="h-96 w-auto "
             src={guyswithmobile}
             alt="two people looking at screen"
           />
@@ -50,7 +49,6 @@ const Body = () => {
       <div className="grid grid-cols-5 my-4 p-4 ">
         <div className="col-span-2 flex p-4 m-4 ml-32 justify-center ">
           <img
-            className=" w-auto "
             src={GirlTouchingMobile}
             alt="man holding a lapton in front of a screen"
           />

@@ -16,7 +16,7 @@ const Footer = () => {
       { title: "Blog", link: "/blog" },
       { title: "Contact Us", link: "/contact" },
       { title: "Pricing", link: "/pricing" },
-      { title: "Testimonils", link: "/testimoni" },
+      { title: "Testimonils", link: "/testimonials" },
     ],
     Support: [
       { title: "Help Center", link: "/help" },
@@ -57,14 +57,13 @@ const Footer = () => {
           </div>
           <div className="flex my-8">
             {socialMediaLinks.map((link, index) => (
-              <span className="">
+              <span className="m-2">
                 <SocialIcon
                   className="hover:scale-110 hover:transition-transform "
                   url={link}
                   bgColor="#364143"
                   fgColor="#ffff"
-                />{" "}
-                .
+                />
               </span>
             ))}
           </div>

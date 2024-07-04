@@ -19,7 +19,7 @@ const CustomerReview = () => {
       >
         <div className="col-span-4 flex justify-end ">
           <img
-            className="  p-24 pt-9"
+            className="p-24 pt-9"
             src={Tesla}
             alt="man holding a lapton in front of a screen"
           />

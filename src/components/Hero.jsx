@@ -6,10 +6,7 @@ import { BrowserRouter } from 'react-router-dom'
 const Hero = () => {
   return (
     <div className=' '>
-      
-      {/* <Carousel /> */}
-      
-      <Lessons />
+      <Carousel />
     </div>
   )
 }

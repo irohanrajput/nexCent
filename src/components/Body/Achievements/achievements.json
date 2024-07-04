@@ -1,22 +1,22 @@
 [
   {
     "icon": "achievements/Members.png",
-    "title": "2,245,341",
+    "title": 2245341,
     "description": "Members"
   },
   {
     "icon": "achievements/Clubs.png",
-    "title": "46,328",
+    "title": 46328,
     "description": "Clubs"
   },
   {
     "icon": "achievements/EventBookings.png",
-    "title": "828,867",
+    "title": 828867,
     "description": "Event Bookings"
   },
   {
     "icon": "achievements/Payments.png",
-    "title": "1,926,436",
+    "title": 1926436,
     "description": "Payments"
   }
 ]
