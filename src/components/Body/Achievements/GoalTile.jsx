@@ -2,7 +2,7 @@ import React from "react";
 
 const GoalTile = ({ icon, title, description }) => {
   return (
-    <div className="flex items-center"style={{ color: "#4D4D4D"}}>
+    <div className="flex items-center text-neutral-600 dark:text-gray-200 ">
       <span className="bg-transparent m-4">
         <img className="h-14" src={icon} alt="#" />
       </span>

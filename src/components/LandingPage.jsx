@@ -9,13 +9,13 @@ import GetDemo from "./GetDemo";
 import Footer from "./Footer";
 
 function LandingPage() {
+  
   return (
     <>
-      <div className="flex flex-col" style={{ backgroundColor: "#F5F7FA" }}>
-        <Navbar />
+      <div className="flex flex-col bg-gray-100 dark:bg-darkBackground" >
         <Hero />
       </div>
-      <div>
+      <div className="bg-white dark:bg-black">
         <OurClients />
         <ManageCommunity />
       </div>

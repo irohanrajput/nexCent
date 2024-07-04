@@ -20,12 +20,11 @@ const Marketing = () => {
     },
   ];
   return (
-    <div className="mb-24 m-8" >
+    <div className="pb-24 p-4 py-9 bg-white dark:bg-black" >
       <div className="flex flex-col max-w-12xl">
           <div>
             <h1
-              className="text-5xl text-center font-semibold"
-              style={{ color: "#4D4D4D" }}
+              className="text-5xl text-center font-semibold text-defaultText dark:text-gray-300"
             >
               Caring is the new Marketing
             </h1>

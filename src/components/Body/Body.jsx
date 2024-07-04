@@ -7,8 +7,8 @@ import GirlTouchingMobile from "./assets/GirlTouchingMobile.png"
 
 const Body = () => {
   return (
-    <div>
-      <div className="grid grid-cols-5 my-4 p-4 ">
+    <div className="bg-white text-neutral-600 dark:text-gray-300 dark:bg-black">
+      <div className="grid grid-cols-5 my-4 p-4">
         <div className="col-span-2 flex p-4 m-4 ml-32 justify-center ">
           <img
             src={guyswithmobile}
@@ -20,7 +20,6 @@ const Body = () => {
             <span>
               <h1
                 className="text-5xl p-4 font-semibold"
-                style={{ color: "#4D4D4D" }}
               >
                 The unseen of spending three years at Pixelgrade
               </h1>
@@ -58,8 +57,8 @@ const Body = () => {
           <div className="flex flex-col justify-center p-4  h-full">
             <span>
               <h1
-                className="text-5xl p-4 font-semibold"
-                style={{ color: "#4D4D4D" }}
+                className="text-5xl p-4 font-semibold text-neutral-600 dark:text-gray-300 "
+                
               >
                 How to design your site footer like we did
               </h1>

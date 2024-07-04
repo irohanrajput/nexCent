@@ -1,8 +1,8 @@
-// src/components/Navbar.jsx
 import React from "react";
 import { Link } from "react-router-dom";
+import DarkModeToggle from './DarkModeToggle';
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, toggleDarkMode }) => {
   const navbar_elements = [
     "Home",
     "Service",
@@ -12,24 +12,22 @@ const Navbar = () => {
     "FAQs",
   ];
   return (
-    <div className="p-4 m-4 mt-1 flex items-center justify-around ">
+    <div className="p-4 mt-4 flex items-center justify-around dark:bg-darkBackground dark:text-white">
       <div className="flex items-center">
         <img src="nexcent.svg" alt="Nexcent Logo" className="mr-2" />
         <h1 className="text-3xl font-bold">Nexcent</h1>
       </div>
-      <div className="flex space-x-12 ">
-        {navbar_elements.map((navbar_element, index) => {
-          return (
-            <ul className=" hover:scale-105 hover:transition-transform ">
-              <li key={index}>
-                <Link to="/"> {navbar_element} </Link>
-              </li>
-            </ul>
-          );
-        })}
+      <div className="flex space-x-12">
+        {navbar_elements.map((navbar_element, index) => (
+          <ul key={index} className="hover:scale-105 hover:transition-transform">
+            <li>
+              <Link to="/"> {navbar_element} </Link>
+            </li>
+          </ul>
+        ))}
       </div>
-      <div className="flex justify-around space-x-4 ">
-        <button style={{ color: "#43A046" }} className="bg-transparent ">
+      <div className="flex items-center space-x-4">
+        <button style={{ color: "#43A046" }} className="bg-transparent">
           <Link to="/login" className="">
             Login
           </Link>
@@ -39,7 +37,12 @@ const Navbar = () => {
             Sign up
           </Link>
         </button>
+        <DarkModeToggle isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      
+      
+        
       </div>
+      
     </div>
   );
 };

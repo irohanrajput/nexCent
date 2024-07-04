@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 
 const Lessons = () => {
   return (
-    <div>
+    <div className="bg-gray-100 dark:bg-darkBackground">
       <div className="grid h-full w-full grid-cols-7 m-4 p-4 py-28">
         <div className="col-span-4">
           <div className="flex flex-col justify-center  ml-24 p-8 h-full">
             <div>
               <h1
-                className="text-7xl font-semibold"
-                style={{ color: "#4D4D4D" }}
+                className="text-7xl font-semibold text-neutral-600 dark:text-gray-200"
               >
                 Lessons and insights
               </h1>
@@ -24,7 +23,7 @@ const Lessons = () => {
               </h1>
             </div>
             <div className="my-4 text-lg">
-              <h6 className="" style={{ color: "#717171" }}>
+              <h6 className=" text-gray-500 dark:text-gray-500 " >
                 Where to grow your business as a photographer: site or social
                 media?
               </h6>

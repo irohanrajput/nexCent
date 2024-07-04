@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class', 
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -22,6 +23,11 @@ module.exports = {
       },
       animation: {
         marquee: 'marquee 20s linear infinite',
+      },
+      colors: {
+        darkBackground: '#2C3132',
+        darkText: '#a0aec0',
+        defaultText:'#4D4D4D'    
       },
     },
   },

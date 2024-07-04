@@ -14,8 +14,7 @@ const CustomerReview = () => {
   return (
     <div className="flex justify-center">
       <div
-        className="grid grid-cols-11 my-4 p-4 "
-        style={{ backgroundColor: "#F5F7FA" }}
+        className="grid grid-cols-11 my-4 p-4 bg-gray-100 dark:bg-darkBackground "
       >
         <div className="col-span-4 flex justify-end ">
           <img

@@ -6,12 +6,11 @@ import CountUp from "react-countup";
 const Achievements = () => {
   return (
     <div
-      className="grid grid-cols-2 my-9 p-12"
-      style={{ backgroundColor: "#F5F7FA" }}
+      className="grid grid-cols-2 my-9 p-12 bg-gray-100 dark:bg-darkBackground "
     >
-      <div className="flex flex-col justify-center  ml-28 p-8 h-full">
+      <div className="flex flex-col  justify-center  ml-28 p-8 h-full">
         <span>
-          <h1 className="text-5xl font-semibold" style={{ color: "#4D4D4D" }}>
+          <h1 className="text-5xl dark:text-gray-300 font-semibold" text-neutral-600 dark:text-gray-200 >
             Helping a local
           </h1>
         </span>

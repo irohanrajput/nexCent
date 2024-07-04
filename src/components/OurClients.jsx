@@ -12,12 +12,11 @@ const OurClients = () => {
     "logoipsum3.svg",
   ];
   return (
-    <div className="flex flex-col my-4 p-4">
+    <div className="flex flex-col my-4 p-4 bg-white dark:bg-black">
       <div>
         <span>
           <h1
-            className="text-5xl  text-center font-semibold"
-            style={{ color: "#4D4D4D" }}
+            className="text-5xl text-neutral-600 dark:text-gray-200 text-center font-semibold"
           >
             Our Clients
           </h1>
