@@ -12,7 +12,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }) => {
     "FAQs",
   ];
   return (
-    <div className="p-4 flex items-center justify-around bg-red-100 dark:bg-darkBackground dark:text-white">
+    <div className="p-4 flex items-center justify-around bg-gray-100 dark:bg-darkBackground dark:text-white">
       <div className="flex items-center">
         <img src="nexcent.svg" alt="Nexcent Logo" className="mr-2" />
         <h1 className="text-3xl font-bold">Nexcent</h1>
