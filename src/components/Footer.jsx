@@ -4,10 +4,10 @@ import { SocialIcon } from "react-social-icons";
 const Footer = () => {
   const [email, setEmail] = useState("");
   const socialMediaLinks = [
-    "https://www.instagram.com/",
-    "https://www.dribbble.com/",
-    "https://www.twitter.com/",
-    "https://www.youtube.com/",
+    "https://www.instagram.com/irohanrajput",
+    "https://www.dribbble.com/irohanrajput",
+    "https://www.twitter.com/irohanrajput",
+    "https://www.youtube.com/irohanrajput",
   ];
 
   const Links = {
